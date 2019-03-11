@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/pp.png">
+        
+        <title>Sangeet Sagar</title>
+    </head>
+    <body>
+        <!-- <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
+            <label for="nav-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+            <div class="navigation__background"></div>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__list-item">
+                        <a href=# class="navigation__link">About</a>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a href=# class="navigation__link">About</a>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a href=# class="navigation__link">About</a>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a href=# class="navigation__link">About</a>
+                    </li>
+                </ul>
+            </nav>
+        </div> -->
+
+        <header class="header">
+            <div class="header__profile-image">
+                <img src="./img/pp.png" alt="">
+            </div>
+            <div class="header__typewriter">
+                <h1 class="go">Hi! My name is Sangeet Sagar.</h1>
+            </div>
+            <div class="header__down-key">
+                <a href="#sec-exp"><i class="fas fa-chevron-down fa-2x"></i></a>
+            </div>
+        </header>
+
+        <main>
+            <div id="sec-exp" class="section-experience">
+                <h1 class="heading-1 center m-b-50">Experience</h1>
+                <ul class="exp-timeline">
+                    <li>
+                        <div class="exp-timeline__item">
+                            <span class="duration">Jul'18 - Current</span>
+                            <span onclick="window.open('https://www.onedirect.in')">OneDirect</span>
+                            <h3>Frontend Developer</h3>
+                            <p>Working on OneDirect dashboard used by various businesses which provides personalized and delightful customer experiences across all digital touch points like Email, Facebook, Twitter, Google My Business, Play Store etc.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="exp-timeline__item">
+                            <span class="duration">Feb'18 - Jul'18&nbsp;</span>
+                            <span onclick="window.open('https://www.shell.in')">Shell India</span>
+                            <h3>Software Engineer</h3>
+                            <p>Worked on a web and an android application to fetch the data of a smart car and show it in a user-friendly interface using APIs from smartcar.com to connect with Tesla and other smart cars.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="exp-timeline__item">
+                            <span class="duration">&nbsp;Jul'15 - Jan'18&nbsp;</span>
+                            <span onclick="window.open('https://www.manh.com')">Manhattan Associates</span>
+                            <h3>Associate Software Engineer</h3>
+                            <p>Worked on a custom user interface which helps in configuring and monitoring several hosts of Manhattan clients to Nagios monitoring tool.
+                                    <br>Also worked on custom modifications on MA's Transportation Management System for various clients.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- <div class="section-experience" id="sec-exp">
+                <h1 class="heading-1 center m-b-150">Experience</h1>
+                <div class="experience-timeline">
+                    <div class="left-cube-side">
+                        <div id="cubeMain">
+                            <div id="cubeSides" class="exp-cube-sides">
+                                <div id="front" class="exp-onedirect" onclick="window.open('http://www.onedirect.in')">
+                                    <div class="exp-duration">
+                                        <h3 class="heading-3 center">Jul'18 - Current</h3>
+                                    </div>
+                                    <div class="exp-title">
+                                        <h3 class="heading-3 center">Frontend Developer</h3>
+                                    </div>
+                                </div>
+                                <div id="right" class="exp-shell" onclick="window.open('http://www.shell.in')">
+                                    <div class="exp-duration">
+                                        <h3 class="heading-3 center">Feb'18 - Jul'18</h3>
+                                    </div>
+                                    <div class="exp-title">
+                                        <h3 class="heading-3 center">Software Engineer</h3>
+                                    </div>
+                                </div>
+                                <div id="back" class="exp-manhattan" onclick="window.open('http://www.manh.com')">
+                                    <div class="exp-duration">
+                                        <h3 class="heading-3 center">Jul'15 - Jan'18</h3>
+                                    </div>
+                                    <div class="exp-title">
+                                        <h3 class="heading-3 center">Associate Software Engineer</h3>
+                                    </div>
+                                </div>
+                                <div id="left" class="exp-new">
+                                    <p>
+                                        <span class="tp-swipe">Swipe</span>
+                                        <span class="tp-left">left</span>
+                                        <span class="tp-to">to</span>
+                                        <span class="tp-see">see</span>
+                                        <span class="tp-my">my</span>
+                                        <span class="tp-exp">Experience</span>
+                                    </p>
+                                </div>
+                                <div id="top"></div>
+                                <div id="bottom"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-list-side">
+                        <ul class="company-list">
+                            <li id="od" class="active center" onmouseover="rotateCube(0)">OneDirect</li>
+                            <li id="sh" class="center" onmouseover="rotateCube(1)">Shell India Market Pvt. Ltd.</li>
+                            <li id="mn" class="center" onmouseover="rotateCube(2)">Manhattan Associates</li>
+                        </ul>
+                    </div>
+            </div>
+            </div> -->
+            <div class="section-skills">
+                <h1 class="heading-1 center m-b-100">Top Skills</h1>
+                <div class="skills-grid">
+                    <div class="skill-html">
+                        <div class="skill-value"></div>
+                        <div class="skill-name">HTML</div>
+                    </div>
+                    <div class="skill-css">
+                        <div class="skill-value"></div>
+                        <div class="skill-name">CSS</div>
+                    </div>
+                    <div class="skill-js">
+                        <div class="skill-value"></div>
+                        <div class="skill-name">JAVASCRIPT</div>
+                    </div>
+                    <div class="skill-angular">
+                        <div class="skill-value"></div>
+                        <div class="skill-name">ANGULAR</div>
+                    </div>
+                    <div class="skill-node">
+                        <div class="skill-value"></div>
+                        <div class="skill-name">NODE</div>
+                    </div>
+                    <div class="skill-mysql">
+                        <div class="skill-value"></div>
+                        <div class="skill-name">MYSQL</div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-portfolio">
+                <h1 class="heading-1 center m-b-100">Portfolio</h1>
+                <div class="portfolio-grid">
+                    <div class="card">
+                        <div class="card__side card__side--front card__side--front-1">
+                            <div class="card__side--front-info">
+                                <p class="card__info--text">Natours</p>
+                                <div class="card__info--langs">
+                                    <img src="./img/html-logo.ico" alt="HTML">
+                                    <img src="./img/css-logo.svg" alt="CSS">
+                                    <img class="img-small" src="./img/sass.png" alt="Sass">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back">
+                            <p>This project is developed with HTML and old school CSS with <strong class="col-strong">float</strong> and <strong class="col-strong">position</strong> to position elements</p>
+                            <a href="./portfolio/Natours/index.html">See here</a>
+                        </div>
+                    </div>
+                    <div class="card flex-row-reverse">
+                        <div class="card__side card__side--front card__side--front-2">
+                            <div class="card__side--front-info">
+                                <p class="card__info--text">Trillio</p>
+                                <div class="card__info--langs">
+                                    <img src="./img/html-logo.ico" alt="HTML">
+                                    <img src="./img/css-logo.svg" alt="CSS">
+                                    <img class="img-small" src="./img/sass.png" alt="Sass">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back">
+                            <p>This project is developed with HTML and CSS and <strong class="col-strong">flexbox</strong> to position every elements</p>
+                            <a href="./portfolio/Trillio/index.html">See here</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__side card__side--front card__side--front-3">
+                            <div class="card__side--front-info">
+                                <p class="card__info--text">Nexter</p>
+                                <div class="card__info--langs">
+                                    <img src="./img/html-logo.ico" alt="HTML">
+                                    <img src="./img/css-logo.svg" alt="CSS">
+                                    <img class="img-small" src="./img/sass.png" alt="Sass">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back">
+                                <p>This project is developed with HTML and CSS and <strong class="col-strong">grid</strong> to position every elements</p>
+                            <a href="./portfolio/Nexter/index.html">See here</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-contact">
+                <h1 class="heading-1 center m-b-100">Contact</h1>
+                <div class="contact-resume m-b-50">
+                    <h3 class="heading-3 center">Want to know more about me? Dowload my resume below</h3>
+                    <div class="contact-resume__items">
+                        <a href="./Sangeet_ShortResume.pdf" download>Short version</a>
+                        <a href="./Sangeet_LongResume.pdf" download>Long version</a>
+                    </div>
+                </div>
+                <div class="contact-email m-b-100">
+                    <h3 class="heading-3">Email me 
+                        <a href="mailto:sagar02501@gmail.com?Subject=Hi Sangeet!">here</a>
+                    </h3>
+                </div>
+                <div class="contact-social">
+                    <h3 class="heading-3 m-b-50 center">Connect with me at below social networks</h3>
+                    <div id="cubeMain" class="contact-social-cube">
+                        <div id="cubeSides">
+                            <div id="front" class="contact-twitter border-rad-10" onclick="window.open('https://twitter.com/Im_SSagar')"></div>
+                            <div id="back" class="contact-facebook border-rad-10" onclick="window.open('https://www.facebook.com/sangeet.sagar.25')"></div>
+                            <div id="left" class="contact-quora border-rad-10" onclick="window.open('https://www.quora.com/profile/Sangeet-Sagar-1')"></div>
+                            <div id="right" class="contact-linkedin border-rad-10" onclick="window.open('https://www.linkedin.com/in/sagarsangeet/')"></div>
+                            <!-- <div id="top"></div>
+                            <div id="bottom"></div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="footer">
+            <div class="made-by">
+                Made with <i class="fas fa-heart"></i> by Sangeet Sagar
+            </div>
+            <div class="copyright">
+                &copy; sangeetsagar.info
+            </div>
+        </footer>
+        
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script type = "text/javascript" src="js/particles.js"></script>
+    <script type = "text/javascript" src="js/typing.js"></script>
+    <script type = "text/javascript" src="js/cube.js"></script>
+</html>
