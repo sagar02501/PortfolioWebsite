@@ -1,0 +1,41 @@
+.center {
+    text-align: center;
+}
+.active {
+    background-position: 100%;
+    color: $color-primary;
+}
+.m-b-100 {
+    margin-bottom: 10rem;
+}
+.m-b-150 {
+    margin-bottom: 15rem;
+    @include respond(tab-port) {
+        margin-bottom: 10rem !important; 
+    }
+}
+.m-b-50 {
+    margin-bottom: 5rem;
+}
+.img-small {
+    height: 40px !important;
+    width: 40px !important;
+}
+
+.flex-row-reverse {
+    flex-direction: row-reverse !important;
+}
+
+.border-rad-10 {
+    border-radius: 10px !important;
+}
+.col-strong {
+    color: $color-primary !important;
+    @include respond(phone) {
+        color: $color-secondary-light !important;
+    }
+}
+.left-space {
+    width: 15.5rem;
+    height: 100px;
+}

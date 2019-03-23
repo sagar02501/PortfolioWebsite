@@ -1,0 +1,70 @@
+.contact-resume {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__items {
+        display: flex;
+        font-size: 1.5rem;
+        justify-content: space-between;
+        cursor: pointer;
+        color: $color-primary;
+
+        
+        & > a {
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border: 1px solid $color-primary;
+            color: $color-primary;
+
+            &:hover {
+                color: #272727;
+                background: $color-primary;
+            }
+        }
+        & > a + a {
+            margin-left: 2rem;
+        }
+    }
+}
+.contact-email {
+    display: flex;
+    justify-content: center;
+
+    & a {
+        text-decoration: none;
+        color: #fff;
+    }
+}
+
+.contact-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-social-cube {
+    height: 100px !important;
+    width: 100px !important;
+
+    & > div {
+        animation: rotateCube 10s linear infinite;
+    }
+}
+.contact-twitter {
+    // background: linear-gradient(to right bottom, rgba($color-primary, 0.8), rgba($color-primary, 0.8)), url('../../img/twitter.png');
+    background: url('../../img/twitter.png');
+}
+.contact-facebook {
+    // background: linear-gradient(to right bottom, rgba($color-primary, 0.8), rgba($color-primary, 0.8)), url('../../img/fb.png');
+    background: url('../../img/fb.png');
+}
+.contact-quora {
+    // background: linear-gradient(to right bottom, rgba($color-primary, 0.8), rgba($color-primary, 0.8)), url('../../img/quora-logo.png');
+    background: url('../../img/quora-logo.png');
+}
+.contact-linkedin {
+    // background: linear-gradient(to right bottom, rgba($color-primary, 0.8), rgba($color-primary, 0.8)), url('../../img/linkedin.png');
+    background: url('../../img/linkedin.png');
+}

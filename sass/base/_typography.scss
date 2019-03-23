@@ -1,0 +1,160 @@
+%heading {
+    font-family: $font-display;
+    font-weight: 400;
+}
+
+.heading-1 {
+    @extend %heading;
+    font-size: 4.5rem;
+    color: $color-grey-light-1;
+    line-height: 1;
+}
+
+.heading-2 {
+    @extend %heading;
+    font-size: 4rem;
+    font-style: italic;
+    line-height: 1;
+
+    &--light {
+        color: $color-grey-light-1;
+    }
+
+    &--dark {
+        color: $color-grey-dark-1;
+    }
+}
+
+.heading-3 {
+    @extend %heading;
+    font-size: 1.6rem;
+    color: $color-primary;
+    text-transform: uppercase;
+}
+
+.heading-4 {
+    @extend %heading;
+    font-size: 1.9rem;
+
+    &--light {
+        color: $color-grey-light-1;
+    }
+
+    &--dark {
+        color: $color-grey-dark-1;
+    }
+}
+
+.btn {
+    background-color: $color-primary;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    font-family: $font-display;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 1.8rem 3rem;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover {
+        background-color: $color-primary-dark;
+    }
+}
+
+/* DEMO-SPECIFIC STYLES */
+.go {
+    width: 1px;
+    color: $color-primary;
+    // font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid $color-primary; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end) infinite,
+      blink-caret 0.5s step-end infinite;
+  }
+
+  .return {
+    animation: return-typing 3.5s steps(30, end) infinite,blink-caret 0.5s step-end infinite;
+  }
+
+  .header__typewriter{
+      min-width: 320px;
+  }
+  
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 1px }
+    to { width: 100% }
+  }
+
+  @include respond(phone) {
+    @keyframes typing {
+        from { width: 1px }
+        to { width: 90% }
+    }
+}
+
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: $color-primary}
+  }
+  
+  /* The typing effect */
+  @keyframes return-typing {
+    from { width: 100% }
+    to { width: 1px }
+  }
+  @include respond(phone) {
+    @keyframes return-typing {
+        from { width: 90% }
+        to { width: 1px }
+      }
+}
+
+.tp-swipe {
+    font-size: 1.8rem;
+    color: #fff;
+    letter-spacing: 0.3rem;
+}
+.tp-left {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    align-self: flex-start;
+    color: $color-primary;
+    font-style: italic;
+}
+.tp-to {
+    font-size: 2rem;
+    color: #fff;
+    letter-spacing: 0.3rem;
+}
+.tp-see {
+    font-size: 2rem;
+    text-transform: uppercase;
+    align-self: flex-end;
+    color: $color-primary;
+}
+.tp-my {
+    font-size: 2rem;
+    color: #fff;
+    letter-spacing: 0.3rem;
+}
+.tp-exp {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    color: #3b475275;
+    background-image: url(../../img/wave.png);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: water 25s infinite;
+}

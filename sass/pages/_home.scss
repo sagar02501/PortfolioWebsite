@@ -1,0 +1,185 @@
+.section-experience {
+    background: linear-gradient(to left bottom, $color-primary-light, $color-primary);
+    padding: 25rem 5rem 15rem 20rem;
+    margin-top: -20vh;
+
+    h1 {
+        transform: translateX(-9%);
+    }
+
+    @include respond(mid-desktop) {
+        padding: 25rem 25rem 15rem 35rem;
+
+        h1 {
+            transform: translateX(-6%);
+        }
+    }
+
+    @include respond(phone) {
+        padding: 15rem 0 15rem 15rem;
+        margin-top: 0;
+
+        h1 {
+            transform: translateX(-20%);
+        }
+    }
+
+}
+// .section-exp {
+//     background: linear-gradient(to left bottom, $color-primary-light, $color-primary);
+//     padding: 20rem 15rem;
+//     margin-top: -20vh;
+
+// }
+.experience-timeline {
+    display: flex;
+    justify-content: space-between;
+}
+.exp-onedirect {
+    background: url('../img/onedirect.jpg');
+    position: relative;
+    overflow: hidden;
+}
+.exp-shell {
+    background: url('../img/Shell.jpeg');
+    position: relative;
+    overflow: hidden;
+}
+.exp-manhattan {
+    background: url('../img/manh.jpg');
+    position: relative;
+    overflow: hidden;
+}
+.exp-new {
+    background: $color-grey-dark;
+    position: relative;
+    overflow: hidden;
+    font-size: 1.5rem;
+    padding: 0 5rem;
+
+    & > p {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+.exp-cube-sides {
+    // animation: rotateCube 5s linear infinite;
+
+    @include respond(phone) {
+        transform: rotateY(90deg);
+    }
+}
+.left-cube-side {
+    height: 40rem;
+    width: 40rem;
+
+    @include respond(phone) {
+        height:77vw;
+        width: 77vw;
+    }
+}
+.right-list-side{
+    
+    @include respond(phone) {
+        display: none;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        list-style: none;
+        color: #fff;
+        cursor: pointer;
+    
+        & > li {
+            font-weight: 400;
+            font-size: 2rem;
+            border: 1px solid #fff;
+            padding: 1rem;
+            position: relative;
+            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+            background-size: 250%;
+            transition: all 1s;
+        }
+    }
+}
+.section-skills {
+    background: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+    // background: url(../../img/bg-code.jpg);
+    // background-size: cover;
+    padding: 10rem 10rem;
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
+    @include respond(mid-desktop) {
+        padding: 20rem 25rem;
+    }
+    @include respond(big-desktop) {
+        padding: 10rem 35rem;
+    }
+}
+.section-portfolio {
+    background: linear-gradient(to right bottom, $color-primary-light, $color-primary);
+    padding: 10rem 10rem;
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
+    @include respond(mid-desktop) {
+        padding: 20rem 25rem;
+    }
+    @include respond(big-desktop) {
+        padding: 10rem 35rem;
+    }
+}
+.section-contact {
+    background: linear-gradient(to right bottom,$color-secondary-light, $color-secondary-dark);
+    padding: 10rem 10rem;
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
+}
+.exp-title {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translate(250%);
+    transition: all 2s cubic-bezier(0.175,0.885,0.320,1.275);
+    // background: rgba(0, 0, 0, 0.3);
+    padding: 0.3rem 0.2rem;
+}
+.exp-duration {
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    transform: translate(-250%);
+    transition: all 2s cubic-bezier(0.175,0.885,0.320,1.275);
+    // background: rgba(0, 0, 0, 0.3);
+    padding: 0.3rem 0.2rem;
+}
+
+@include respond(tab-port) {
+    .experience-timeline {
+        flex-direction: column;
+    }
+    .left-cube-side {
+        margin-top: 10rem;
+        order: 1;
+        align-self: center;
+    }
+    .right-list-side ul {
+        flex-direction: row;
+        justify-content: space-around;
+
+        & > li {
+            width: 27rem;
+        }
+    }
+}

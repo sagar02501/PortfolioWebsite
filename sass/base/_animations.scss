@@ -1,0 +1,17 @@
+@keyframes rotateCube {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+
+  @keyframes water {
+    0% {
+      background-position: left 0 top 0;
+    }
+    100% {
+        background-position: left 1000px top 0;
+    }
+  }

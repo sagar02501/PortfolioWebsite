@@ -1,0 +1,61 @@
+.header{
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(#6D5D4B, 0.5),
+        rgba(black, 0.5)), url(../../img/bg-green-comp.jpg);
+    background-size: cover;
+    background-position: top;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+
+    @include respond(phone) {
+        -webkit-clip-path: none;
+        clip-path: none;
+        height: 100vh;
+    }
+
+    &__profile-image {
+        height: 10rem;
+        width: 10rem;
+        margin-bottom: 2rem;
+
+        > img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    &__typewriter {
+        
+    }
+    &__down-key {
+        cursor: pointer;
+        height: 60px;
+        width: 60px;
+        margin-top: 25rem;
+        border: 2px solid $color-primary;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: scale(1);
+        transition: all 0.2s;
+
+        @include respond(phone) {
+            margin-top: 35rem;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+        }
+        
+        & > a {
+            color: $color-primary;
+        }
+    }
+}

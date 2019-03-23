@@ -334,6 +334,9 @@ body {
       .card__side--front-3 {
         background: url(../../img/nexter.gif);
         background-size: contain; }
+      .card__side--front-4 {
+        background: url(../../img/ReadLine.png);
+        background-size: contain; }
       .card__side--front-info {
         height: 100%;
         display: flex;

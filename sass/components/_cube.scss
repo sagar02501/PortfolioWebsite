@@ -1,0 +1,80 @@
+#cubeMain {
+    width: inherit;
+    height: inherit;
+    perspective: 800px;
+}
+
+#cubeSides {
+    width: inherit;
+    height: inherit;
+    transform-style: preserve-3d;
+    transition: all 2s cubic-bezier(0.175,0.885,0.320,1.275);
+    // animation: rotateCube 5s linear infinite;
+}
+
+#cubeSides > div {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    border-radius: 3px;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+}
+
+#front{
+    transform:  translate3d(0, 0, $cubeWidth / 2);
+    background-size: cover;
+
+    @include respond(phone) {
+        transform:  translate3d(0, 0, $cubeWidthPhone / 2);
+    }
+}
+
+#back{
+    transform:  rotateY(180deg) translate3d(0, 0, $cubeWidth / 2);
+    background-size: cover;
+
+    @include respond(phone) {
+        transform:  rotateY(180deg) translate3d(0, 0, $cubeWidthPhone / 2);
+    }
+}
+
+
+#left{
+    transform:  rotateY(-90deg) translate3d(0, 0, $cubeWidth/ 2);
+    background-size: cover;
+
+    @include respond(phone) {
+        transform:  rotateY(-90deg) translate3d(0, 0, $cubeWidthPhone / 2);
+    }
+}
+
+
+#right{
+    transform:  rotateY(90deg) translate3d(0, 0, $cubeWidth / 2);
+    background-size: cover;
+
+    @include respond(phone) {
+        transform:  rotateY(90deg) translate3d(0, 0, $cubeWidthPhone / 2);
+    }
+}
+
+#top{
+    transform: rotateX(90deg) translate3d(0, 0, $cubeWidth / 2);
+    background-size: cover;
+
+    @include respond(phone) {
+        transform: rotateX(90deg) translate3d(0, 0, $cubeWidthPhone / 2);
+    }
+}
+
+#bottom{
+    transform: rotateX(-90deg) translate3d(0, 0, $cubeWidth / 2);
+    background-size: cover;
+
+    @include respond(phone) {
+        transform: rotateX(-90deg) translate3d(0, 0, $cubeWidthPhone / 2);
+    }
+}

@@ -9,6 +9,7 @@ var touchstartX = 0;
     var handler;
     var i = 1;
 
+    const pp = document.getElementsByClassName('header__profile-image')[0];
     var gesuredZone = document.getElementById('cubeSides');
     var front = document.getElementById('od');
     var right = document.getElementById('sh');
@@ -25,6 +26,11 @@ var touchstartX = 0;
         touchendX = event.changedTouches[0].screenX;
         touchendY = event.changedTouches[0].screenY;
         handleGesure();
+    }, false); 
+
+    window.addEventListener('scroll', function(event) {
+        var theta = document.documentElement.scrollTop / 10;
+        pp.style.webkitTransform = 'rotate(' + theta + 'rad)';
     }, false); 
 
     // window.addEventListener("mousewheel", handler = function(event){
