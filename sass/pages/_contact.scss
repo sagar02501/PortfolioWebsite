@@ -37,6 +37,17 @@
         color: #fff;
     }
 }
+.contact-github {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        cursor: pointer;
+        height: 50px;
+        width: 50px
+    }
+}
 
 .contact-social {
     display: flex;
